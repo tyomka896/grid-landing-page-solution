@@ -4,8 +4,8 @@ This is a solution to the [Grid landing page challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [GitLab](https://gitlab.com/tyomka896/grid-landing-page-solution)
-- Live Site URL: [gitlab.io](https://frontend-mentor-grid-landing-page-solution-ef9751.gitlab.io/)
+- Solution URL: [GitLab](https://github.com/tyomka896/grid-landing-page-solution)
+- Live Site URL: [gitlab.io](https://tyomka896.github.io/grid-landing-page-solution/)
 
 ## Built with
 
