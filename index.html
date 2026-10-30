@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="/assets/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bridge Collective</title>
+    </head>
+    <body>
+        <main class="relative grid min-h-screen grid-rows-[auto_1fr_auto]">
+            <header
+                class="border-base/30 z-50 flex items-center justify-between border-b px-5 py-4 lg:px-8"
+            >
+                <div
+                    class="flex flex-row flex-nowrap items-center gap-1.5 select-none"
+                >
+                    <img src="/assets/favicon.png" width="10" height="10" />
+                    <span class="text-sm">Bridge Collective</span>
+                </div>
+
+                <button id="menu-button" class="group p-2" type="button">
+                    <img
+                        src="/assets/icon-menu.svg"
+                        width="20"
+                        height="20"
+                        class="block size-5 group-[.is-open]:hidden"
+                    />
+                    <img
+                        src="/assets/icon-close.svg"
+                        width="20"
+                        height="20"
+                        class="hidden size-5 group-[.is-open]:block"
+                    />
+                </button>
+            </header>
+
+            <div
+                id="menu-nav"
+                class="group absolute inset-0 top-17 z-45 overflow-hidden"
+            >
+                <div
+                    id="menu-backdrop"
+                    class="absolute inset-0 bg-black/30 opacity-0 transition-opacity duration-200 group-[.is-open]:pointer-events-auto group-[.is-open]:opacity-100"
+                ></div>
+
+                <nav
+                    class="absolute top-0 right-0 w-full -translate-y-full bg-blue-700 py-12 transition-transform duration-200 ease-in-out group-[.is-open]:translate-y-0 lg:h-full lg:max-w-100 lg:translate-x-full lg:translate-y-0 lg:group-[.is-open]:translate-x-0"
+                >
+                    <ul
+                        class="flex h-full flex-col items-center gap-2 text-3xl font-medium lg:items-end lg:pr-6"
+                    >
+                        <li
+                            class="hover:border-b-base cursor-pointer border-b-2 border-b-transparent"
+                        >
+                            <a href="#about">About</a>
+                        </li>
+
+                        <li
+                            class="hover:border-b-base cursor-pointer border-b-2 border-b-transparent"
+                        >
+                            <a href="#our-work">Our Work</a>
+                        </li>
+
+                        <li
+                            class="hover:border-b-base cursor-pointer border-b-2 border-b-transparent"
+                        >
+                            <a href="#partners">Partners</a>
+                        </li>
+
+                        <li
+                            class="hover:border-b-base cursor-pointer border-b-2 border-b-transparent"
+                        >
+                            <a href="#annual-report">Annual Report</a>
+                        </li>
+
+                        <li
+                            class="hover:border-b-base cursor-pointer border-b-2 border-b-transparent"
+                        >
+                            <a href="#donate">Donate</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr]"
+            >
+                <div
+                    class="border-base/30 relative flex cursor-pointer items-center border-b px-6 py-16 hover:bg-blue-600 sm:col-span-2 lg:col-span-1 lg:row-span-2 lg:border-b-0"
+                >
+                    <div class="flex max-w-90 flex-col gap-6 lg:gap-10">
+                        <h1 class="text-5xl">A classroom for every child.</h1>
+
+                        <p class="text-base/80">
+                            We found the schools, train the teachers, and
+                            measure what works - so every child we reach today
+                            becomes a graduate tomorrow.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="border-base/30 grid min-h-80 cursor-pointer grid-rows-[auto_1fr] border-b p-6 hover:bg-blue-600 lg:border-l"
+                >
+                    <div class="flex items-center justify-between">
+                        <img src="/assets/icon-sparkle.svg" class="size-7" />
+
+                        <p class="text-4xl">2.4M</p>
+                    </div>
+
+                    <div class="flex flex-col self-end">
+                        <h2>Schools reached</h2>
+
+                        <p class="text-base/80 text-sm">
+                            Across 31 countries since 2011.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="border-base/30 grid min-h-80 cursor-pointer grid-rows-[auto_1fr] border-b p-6 hover:bg-blue-600 sm:border-l"
+                >
+                    <div class="flex items-center justify-between">
+                        <img src="/assets/icon-plus.svg" class="size-7" />
+
+                        <p class="text-4xl">1,284</p>
+                    </div>
+
+                    <div class="flex flex-col self-end">
+                        <h2>Schools partnered</h2>
+
+                        <p class="text-base/80 text-sm">
+                            In 14 countries, from Kenya to Guatemala.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="border-base/30 grid min-h-80 cursor-pointer grid-rows-[auto_1fr] border-b p-6 hover:bg-blue-600 sm:border-b-0 lg:border-l"
+                >
+                    <div class="flex items-center justify-between">
+                        <img
+                            src="/assets/icon-arrow-right.svg"
+                            class="size-7"
+                        />
+
+                        <p class="text-4xl">38K</p>
+                    </div>
+
+                    <div class="flex flex-col self-end">
+                        <h2>Teachers trained</h2>
+
+                        <p class="text-base/80 text-sm">
+                            Equipped with modern tools and methodology.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="border-base/30 grid min-h-80 cursor-pointer grid-rows-[auto_1fr] p-6 hover:bg-blue-600 sm:border-l"
+                >
+                    <div class="flex items-center justify-between">
+                        <img
+                            src="/assets/icon-trending-up.svg"
+                            class="size-7"
+                        />
+
+                        <p class="text-4xl">3.1×</p>
+                    </div>
+
+                    <div class="flex flex-col self-end">
+                        <h2>Graduation lift</h2>
+
+                        <p class="text-base/80 text-sm">
+                            Partner schools outperform national averages 3x.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <footer
+                class="border-t-base/30 flex items-center justify-between border-t px-5 py-6 lg:px-10"
+            >
+                <div
+                    class="flex w-full flex-col md:flex-row md:justify-between"
+                >
+                    <p class="text-base/80 text-sm">© 2026 Bridge Collective</p>
+                    <p class="text-base/80 text-sm">
+                        Registered charity 12345678
+                    </p>
+                </div>
+            </footer>
+        </main>
+
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Inter Variable";
+    src: url("/assets/fonts/inter/inter-variable.ttf")
+        format("truetype-variations");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --base: hsl(0, 0%, 100%);
+    --blue-200: hsl(224, 100%, 95%);
+    --blue-400: hsl(220, 100%, 64%);
+    --blue-600: hsl(228, 100%, 60%);
+    --blue-700: hsl(228, 99%, 58%);
+}
+
+@theme {
+    --color-base: var(--base);
+    --color-blue-200: var(--blue-200);
+    --color-blue-400: var(--blue-400);
+    --color-blue-600: var(--blue-600);
+    --color-blue-700: var(--blue-700);
+
+    --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+    html {
+        @apply bg-blue-700 font-sans text-base;
+    }
+
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+}
