@@ -9,7 +9,7 @@
     <body>
         <main class="relative grid min-h-screen grid-rows-[auto_1fr_auto]">
             <header
-                class="border-base/30 z-50 flex items-center justify-between border-b px-5 py-4 lg:px-8"
+                class="border-base/30 z-50 flex h-18 items-center justify-between border-b px-5 py-4 lg:px-8"
             >
                 <div
                     class="flex flex-row flex-nowrap items-center gap-1.5 select-none"
@@ -36,15 +36,15 @@
 
             <div
                 id="menu-nav"
-                class="group pointer-events-none absolute inset-0 top-17 z-45 overflow-hidden group-[.is-open]:pointer-events-auto"
+                class="group pointer-events-none absolute inset-0 top-18 overflow-hidden group-[.is-open]:pointer-events-auto"
             >
                 <div
                     id="menu-backdrop"
-                    class="absolute inset-0 bg-black/30 opacity-0 transition-opacity duration-200 group-[.is-open]:pointer-events-auto group-[.is-open]:opacity-100"
+                    class="absolute inset-0 z-45 bg-black/30 opacity-0 transition-opacity duration-200 group-[.is-open]:pointer-events-auto group-[.is-open]:opacity-100"
                 ></div>
 
                 <nav
-                    class="absolute top-0 right-0 w-full -translate-y-full bg-blue-700 py-12 transition-transform duration-200 ease-in-out group-[.is-open]:translate-y-0 lg:h-full lg:max-w-100 lg:translate-x-full lg:translate-y-0 lg:group-[.is-open]:translate-x-0"
+                    class="pointer-events-auto absolute top-0 right-0 z-50 w-full -translate-y-full bg-blue-700 py-12 transition-transform duration-200 ease-in-out group-[.is-open]:translate-y-0 lg:h-full lg:max-w-100 lg:translate-x-full lg:translate-y-0 lg:group-[.is-open]:translate-x-0"
                 >
                     <ul
                         class="flex h-full flex-col items-center gap-2 text-3xl font-medium lg:items-end lg:pr-6"
